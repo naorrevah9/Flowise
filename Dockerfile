@@ -33,6 +33,7 @@ RUN pnpm install
 
 RUN pnpm build
 
-EXPOSE 3000
+ENV PORT=10000
+EXPOSE 10000
+CMD ["pnpm", "start"]
 
-CMD [ "pnpm", "start" ]
